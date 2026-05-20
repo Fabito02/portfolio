@@ -615,13 +615,13 @@ header {
 .box img {
     cursor: pointer;
     margin: 4px;
-    border-radius: 12px;
+    border-radius: 20px;
     width: calc(50% - 8px);
     transition: transform 0.07s ease-in-out;
     box-shadow: 0px 4px 6px var(--cor-sombra);
-    transition:
-        transform 0.25s ease-out,
-        filter 0.25s;
+    transition: transform 0.25s ease-out, filter 0.25s;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .box img:hover {
@@ -717,6 +717,20 @@ footer p {
 
 .habilidades img:hover {
     transform: scale(1.08);
+}
+
+.descricaoProjeto {
+    max-width: 550px;
+    background-color: var(--cor-fundo-items);
+    border: 1px solid var(--cor-borda);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px var(--cor-sombra);
+    transition: background-color 0.2s;  
+    font-size: 0.94rem;
 }
 
 @media (max-width: 720px) {
