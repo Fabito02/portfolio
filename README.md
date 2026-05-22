@@ -1,3 +1,3 @@
-# Portifólio
+# Portfólio
 
-[Acessar Site](https://fabito02.github.io/portifolio/)
+[Acessar Site](https://fabito02.github.io/portfolio/)
