@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const animar = document.querySelectorAll(".animar");
-  const desiredPixels = 100;
-
-  // Calcula a porcentagem de threshold baseado na altura da viewport
-  const thresholdPercentage = desiredPixels / window.innerHeight;
-
+  
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -16,8 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: thresholdPercentage,
-    },
+      root: null,
+      rootMargin: '-140px 0px',
+    }
   );
 
   animar.forEach((element) => {
